@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Modal</title>
+</head>
+<body>
+    <main class="main">
+        <div class="main__block block">
+            <h1 class="block__title">Желаете заполнить форму?</h1>
+            <button class="block__button btn">Открыть форму</button>
+        </div>
+        </section>
+        <section class="main__modal">
+            <div class="main__modal-content">
+                <h1 class="main__title">Стать партнёром проекта</h1>
+                <form class="main__form form">
+                    <div class="form__logo-container">
+                        <div class="form__additional-info">
+                            <div class="form__field">
+                                <input type="text" id="orgName" class="form__input special">
+                                <span class="error toggleError">Обязательное поле!</span>
+                                <label for="orgName" class="form__label"><span class="form__star">✱</span>Название организации</label>
+                            </div>
+                            <div class="form__field">
+                                <input type="text" id="phoneNumber" class="form__input form__input--phone special">
+                                <span class="error toggleError togglePhone">Обязательное поле!</span>
+                                <span class="form__phone--error error">Некорректный номер телефона!</span>
+                                <label for="phoneNumber" class="form__label"><span class="form__star">✱</span>Телефон</label>
+                            </div>
+                            <div class="form__field">
+                                <input type="email" id="emailAddress" class="form__input form__input--email special">
+                                <span class="error toggleError toggleEmail">Обязательное поле!</span>
+                                <span class="form__email--error error">Некорректный Email!</span>
+                                <label for="emailAddress" class="form__label"><span class="form__star">✱</span>E-mail</label>
+                            </div>
+                        </div>
+                        <div class="form__field-logo">
+                            <p class="form__logo-title"><span class="form__star">✱</span>Логотип (jpeg, png)</p>
+                            <img class="form__logo-image" id="logoImage" src="./image/avatar.png" alt="Аватар">
+                            <label for="fileInput" class="form__change-file">
+                                <img src="./image/svg/changeImage.svg" alt="Текущая картинка">
+                                <p class="form__change-text">Выберите файл</p>
+                            </label>
+                            <div class="form__close-change">
+                                <img id="resetImage" src="./image/svg/close.svg" alt="Закрыть">
+                            </div>
+                            <input type="file" id="fileInput" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <input type="text" id="direction" class="form__input special">
+                        <span class="error toggleError">Обязательное поле!</span>
+                        <label for="direction" class="form__label"><span class="form__star">✱</span>Направление</label>
+                    </div>
+                    <div class="form__field">
+                        <input class="form__input" type="text">
+                        <img class="form__svg" src="./image/svg/browser.svg" alt="Сайт">
+                    </div>
+                    <div class="form__field">
+                        <input class="form__input" type="text">
+                        <img class="form__svg" src="./image/svg/vk.svg" alt="Вконтакте">
+                    </div>
+                    <div class="form__field">
+                        <input class="form__input" type="text">
+                        <img class="form__svg" src="./image/svg/ok.svg" alt="Одноклассники">
+                    </div>
+                    <div class="form__field">
+                        <input class="form__input" type="text">
+                        <img class="form__svg" src="./image/svg/facebook.svg" alt="Facebook">
+                    </div>
+                    <div class="form__field">
+                        <input class="form__input" type="text">
+                        <img class="form__svg"  src="./image/svg/instagram.svg" alt="Instagram">
+                    </div>
+                    <div class="form__field">
+                        <input class="form__input" type="text">
+                        <img class="form__svg" src="./image/svg/youtube.svg" alt="Youtube">
+                    </div>
+                    <div class="form__field">
+                        <input type="text" id="director" class="form__input special">
+                        <label for="director" class="placeholder">Руководитель</label>
+                    </div>
+                    <div class="form__buttons">
+                        <button class="form__accept btn">Стать партнёром проекта</button>
+                        <button class="form__decline btn">Отменить</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
